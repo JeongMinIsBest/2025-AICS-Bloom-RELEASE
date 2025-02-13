@@ -10,7 +10,7 @@ from sklearn.preprocessing import OneHotEncoder
 app = FastAPI()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(BASE_DIR, "models", "0213_xgboost_stock_model.json")
+model_path = os.path.join(BASE_DIR, "0213_xgboost_stock_model.json")
 
 xgb_model = XGBRegressor()
 xgb_model.load_model(model_path)
